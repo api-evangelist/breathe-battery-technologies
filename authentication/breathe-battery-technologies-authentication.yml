@@ -1,0 +1,26 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.breathebatteries.com/breathe-simulate-documentation/api_breathe_design_model/
+docs: https://docs.breathebatteries.com/
+summary:
+  types:
+  - bearer-token
+  api_key_in: []
+  oauth2_flows: []
+  notes: >-
+    Access is mediated by the first-party Python client (breathe-simulate / breathe-design). The
+    client authenticates against the Breathe cloud service using a token that it obtains and
+    refreshes automatically (an ensure_logged_in() step that "checks if a valid token is
+    available and refreshes it if necessary"). The service base URL is provisioned per account
+    via a BD_* environment variable and is not published in the public documentation. No public
+    OpenAPI specification, OAuth authorization/token endpoints, or API-key header scheme are
+    documented on the public surface.
+schemes:
+- name: BearerToken
+  type: http
+  scheme: bearer
+  sources:
+  - https://docs.breathebatteries.com/breathe-simulate-documentation/api_breathe_design_model/
+  description: >-
+    Token-based authentication handled by the SDK's login/refresh flow; token acquisition is not
+    documented as a public endpoint.
