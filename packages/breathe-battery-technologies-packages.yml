@@ -1,0 +1,31 @@
+generated: '2026-07-18'
+method: searched
+source: https://pypi.org/user/ (PyPI project pages)
+packages:
+- language: python
+  registry: pypi
+  name: breathe-simulate
+  url: https://pypi.org/project/breathe-simulate/
+  install: pip install breathe_simulate
+  version: 2.1.5
+  requires_python: '>=3.9'
+  summary: >-
+    Python library for interacting with the Breathe Simulate API and analyzing and visualizing
+    Breathe Simulate battery performance and degradation data.
+  official: true
+- language: python
+  registry: pypi
+  name: breathe-design
+  url: https://pypi.org/project/breathe-design/
+  install: pip install breathe_design
+  version: 1.8.2
+  requires_python: '>=3.9'
+  summary: >-
+    Python library for interacting with the Breathe Design API and analyzing and visualizing
+    Breathe Design cell design data.
+  official: true
+notes: >-
+  Both packages are first-party Breathe Battery Technologies client libraries. MATLAB/Simulink
+  integration is also documented (Breathe Simulate in MATLAB) but ships as library blocks rather
+  than a package-manager artifact. Registries probed with no first-party result: npm, Maven
+  Central, NuGet, pkg.go.dev, RubyGems, Packagist, crates.io.

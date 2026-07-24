@@ -1,0 +1,39 @@
+generated: '2026-07-18'
+method: searched
+source: live probes of /.well-known/* on the documentation and website hosts
+hosts:
+- host: https://docs.breathebatteries.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://www.breathebatteries.com
+  note: >-
+    Host returns HTTP 202 with a JavaScript shell for every path (including nonexistent ones), so
+    none of the responses below are authoritative well-known documents; recorded as soft/non-200.
+  documents:
+  - path: /.well-known/security.txt
+    status: 202
+    authoritative: false
+  - path: /.well-known/openid-configuration
+    status: 202
+    authoritative: false
+  - path: /.well-known/oauth-authorization-server
+    status: 202
+    authoritative: false
+  - path: /.well-known/api-catalog
+    status: 202
+    authoritative: false
+  - path: /.well-known/ai-plugin.json
+    status: 202
+    authoritative: false
+result: >-
+  No real /.well-known/ discovery documents (security.txt, OIDC/OAuth metadata, api-catalog,
+  ai-plugin) are published on either the docs or website host.

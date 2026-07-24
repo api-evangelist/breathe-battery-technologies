@@ -1,8 +1,28 @@
 aid: breathe-battery-technologies
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/breathe-battery-technologies.png
 name: Breathe Battery Technologies
-description: Breathe Battery Technologies is a company surfaced as a portfolio company of speedinvest
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: >-
+  Breathe Battery Technologies is a UK battery software company, spun out of Imperial College
+  London in 2019, that builds physics-based battery simulation, cell design, and adaptive
+  charging software for OEM and cell engineering teams. Its API-delivered products — Breathe
+  Design (cell design), Breathe Simulate (validated performance and degradation modelling), and
+  Breathe Charge (embedded adaptive charging, shipped in Volvo EVs) — are consumed through
+  first-party Python client libraries (breathe-simulate, breathe-design) and MATLAB/Simulink
+  integration, backed by a token-authenticated cloud service. The company is venture-backed
+  (Speedinvest among its investors) and profiled in the API Evangelist network for its
+  developer-facing, programmatically accessible battery engineering platform.
 url: https://raw.githubusercontent.com/api-evangelist/breathe-battery-technologies/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,12 +32,90 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-apis: []
+- Battery
+- Battery Simulation
+- Electric Vehicles
+- Energy Storage
+- Cell Design
+- Physics-Based Modeling
+- Automotive
+- Deep Tech
+- Developer Tools
+apis:
+- name: Breathe Simulate API
+  description: >-
+    API-delivered battery simulation service for predicting performance and degradation with
+    validated physics-based cell models, and for retrieving and designing battery cell formats.
+    Accessed through the first-party breathe-simulate Python client and MATLAB/Simulink blocks
+    using token-based authentication; the REST base URL is provisioned per account (BD_* env
+    var) and not published in the public docs.
+  humanURL: https://docs.breathebatteries.com/breathe-simulate-documentation/api_breathe_design_model/
+  tags:
+  - Battery
+  - Simulation
+  - Cell Design
+  properties:
+  - type: Documentation
+    url: https://docs.breathebatteries.com/
+  - type: APIReference
+    url: https://docs.breathebatteries.com/breathe-simulate-documentation/api_breathe_design_model/
+  - type: SDKs
+    url: packages/breathe-battery-technologies-packages.yml
+  - type: Packages
+    url: packages/breathe-battery-technologies-packages.yml
+  - type: Authentication
+    url: authentication/breathe-battery-technologies-authentication.yml
+  - type: ChangeLog
+    url: changelog/breathe-battery-technologies-changelog.yml
+  - type: Lifecycle
+    url: lifecycle/breathe-battery-technologies-lifecycle.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: Website
+  url: https://www.breathebatteries.com/
+- type: DeveloperPortal
+  url: https://docs.breathebatteries.com/
+- type: Documentation
+  url: https://docs.breathebatteries.com/
+- type: APIReference
+  url: https://docs.breathebatteries.com/breathe-simulate-documentation/api_breathe_design_model/
+- type: GettingStarted
+  url: https://docs.breathebatteries.com/breathe-simulate-documentation/
+- type: SignUp
+  url: https://breathebatteries.com/knowledge-hub/simulate-trial/
+- type: Blog
+  url: https://www.breathebatteries.com/blog
+- type: Support
+  url: https://www.breathebatteries.com/contact
+- type: TermsOfService
+  url: https://www.breathebatteries.com/simulation-products-license-terms
+- type: PrivacyPolicy
+  url: https://breathebatteries.com/privacy-policy
+- type: SDKs
+  url: packages/breathe-battery-technologies-packages.yml
+- type: Packages
+  url: packages/breathe-battery-technologies-packages.yml
+- type: Authentication
+  url: authentication/breathe-battery-technologies-authentication.yml
+- type: ChangeLog
+  url: changelog/breathe-battery-technologies-changelog.yml
+- type: Lifecycle
+  url: lifecycle/breathe-battery-technologies-lifecycle.yml
+- type: LLMsTxt
+  url: llms/breathe-battery-technologies-llms.txt
+- type: WellKnown
+  url: well-known/breathe-battery-technologies-well-known.yml
+- type: DomainSecurity
+  url: security/breathe-battery-technologies-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

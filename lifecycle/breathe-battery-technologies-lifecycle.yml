@@ -1,0 +1,21 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.breathebatteries.com/breathe-simulate-documentation/
+versioning:
+  scheme: semver
+  current:
+    breathe-simulate: 2.1.5
+    breathe-design: 1.8.2
+  docs: https://docs.breathebatteries.com/breathe-simulate-documentation/
+  notes: >-
+    Client libraries are versioned with semantic versioning; the API surface itself exposes a
+    get_service_version() operation. The docs site carries a Release Notes section. No public
+    formal deprecation policy, Sunset/Deprecation header contract (RFC 8594), SLA page, or hosted
+    status page (e.g. status.breathebatteries.com) was found on the public surface.
+deprecation:
+  policy_url: null
+  sunset_header: false
+sla:
+  url: null
+status_page: null
+deprecated_operations: []

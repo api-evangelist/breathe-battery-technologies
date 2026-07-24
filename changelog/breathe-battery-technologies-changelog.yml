@@ -1,0 +1,34 @@
+generated: '2026-07-18'
+method: searched
+source: https://pypi.org/project/breathe-simulate/
+docs: https://docs.breathebatteries.com/breathe-simulate-documentation/
+scheme: semver
+notes: >-
+  No dated public web changelog was found; the docs site references a Release Notes section for
+  Breathe Simulate. Recent entries below are reconstructed from first-party PyPI release history
+  of the breathe-simulate and breathe-design client libraries (upload dates, verbatim versions).
+components:
+- name: breathe-simulate
+  current_version: 2.1.5
+- name: breathe-design
+  current_version: 1.8.2
+entries:
+- component: breathe-simulate
+  version: 2.1.5
+  date: '2026-06-23'
+- component: breathe-simulate
+  version: 2.1.0
+  date: '2026-03-30'
+- component: breathe-simulate
+  version: 2.0.2
+  date: '2026-03-19'
+- component: breathe-simulate
+  version: 2.0.0
+  date: '2026-03-18'
+  breaking: true
+- component: breathe-design
+  version: 1.8.2
+  date: '2026-03-18'
+- component: breathe-design
+  version: 1.8.1
+  date: '2026-03-16'
